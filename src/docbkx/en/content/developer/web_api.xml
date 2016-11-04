@@ -614,8 +614,8 @@ programIdScheme, programStageIdScheme, trackedEntityIdScheme, trackedEntityAttri
     </section>
     <section xml:id="webapi_api_versions">
       <title>Web API versions</title>
-      <para>The Web API is fully versioned starting from DHIS 2.25. The API versioning follows the
-        DHIS 2 major version numbering. As an example, the API version for DHIS 2.25 is
+      <para>The Web API is versioned starting from DHIS 2.25. The API versioning follows the DHIS 2
+        major version numbering. As an example, the API version for DHIS 2.25 is
           <emphasis>25</emphasis>.</para>
       <para>You can access a specific API version by including the version number after the
           <emphasis>/api</emphasis> component, as an example like
@@ -627,6 +627,9 @@ programIdScheme, programStageIdScheme, trackedEntityIdScheme, trackedEntityAttri
         changes.</para>
       <para>The last three API versions will be supported. As an example, DHIS version 2.27 will
         support API version 27, 26 and 25.</para>
+      <para>Note that the metadata model is not versioned, and that you might experience changes e.g.
+        in associations between objects. These changes will be documented in the DHIS2 major version
+        release notes.</para>
     </section>
   </section>
   <section xml:id="webapi_working_with_metadata_api">
