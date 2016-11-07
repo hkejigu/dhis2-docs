@@ -9,7 +9,10 @@
     xml:id="android_config">
     <title>Configure DHIS2 programs to work on Android apps</title>
     <para>To use event programs and tracker programs on the Android Event Capture and Tracker
-        Capture apps, you must configure the programs in DHIS2.</para>
+        Capture apps, you must configure the programs in your
+        <?oxy_comment_start author="cecilia" timestamp="20161107T095657+0100" comment="DHIS2 web?
+you DHIS2 web instance?"?>DHIS2<?oxy_comment_end?>
+        web instance.</para>
     <orderedlist>
         <listitem>
             <para>Create a user with the correct settings:</para>
@@ -41,16 +44,20 @@
             </note>
             <note>
                 <para>Important to only select the actual data capture organisation unit, if you
-                    select top organisation unit, the Event Tracker and the Tracker Capture Android
-                    apps, download ALL data for the organisation unit. </para>
+                    select top organisation unit, the <emphasis role="bold">Event Tracker</emphasis>
+                    and the <emphasis role="bold">Tracker Capture</emphasis> Android apps, download
+                    ALL data for the organisation unit.</para>
             </note>
         </listitem>
         <listitem>
-            <para>Open an Andorid app and log in with the user you created.</para>
-            <para>Now: download programs and organisation units (everything the user has acces
-                to).</para>
-            <para>Pull down to synch with DHIS2
-                <?oxy_comment_start author="cecilia" timestamp="20161102T151130+0100" comment="Add screen shot."?>web<?oxy_comment_end?>.</para>
+            <para>Open the relevant Android app and log in with the user you created.</para>
+        </listitem>
+        <listitem>
+            <para>Pull down to synch with the DHIS2
+                <?oxy_comment_start author="cecilia" timestamp="20161102T151130+0100" comment="Add screen shot."?>web<?oxy_comment_end?>
+                instance.</para>
+            <para>The app downloads all programs and organisation units the user has access
+                to.</para>
         </listitem>
     </orderedlist>
     <note>
@@ -81,10 +88,6 @@
                             <para>You don't have any programs assigned to the organisation
                                 unit</para>
                         </entry>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry/>
                         <entry/>
                     </row>
                 </tbody>

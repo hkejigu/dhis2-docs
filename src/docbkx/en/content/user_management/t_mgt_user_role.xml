@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<section version="5.0"
+    xsi:schemaLocation="http://docbook.org/ns/docbook http://www.docbook.org/xml/5.0/xsd/docbook.xsd"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:mth="http://www.w3.org/1998/Math/MathML"
+    xmlns:db="http://docbook.org/ns/docbook"
+    xml:id="mgt_userrole">
+    <title>Manage user roles</title>
+    <para>As part of creating a user name you are required to define the user role. Do so by
+        clicking on <emphasis role="italic">User Role</emphasis> on the left side of the displayed
+        screen. This will lead you to the User role management page where you can click on
+            <guibutton>Add new</guibutton> to create a new role.</para>
+    <screenshot>
+        <title>Add new user role</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="80%" align="center"
+                    fileref="resources/images/dhis2UserManual/add_user_role.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
+    </screenshot>
+    <para>The following screen will open and here in the first text box you need to give a <emphasis
+            role="italic">Name</emphasis> of the Role such as Super User, Admin User, etc. The
+        second text box called <emphasis role="italic">Description</emphasis> gives more information
+        about the type of User Role that is being created for e.g. State Admin User, District Data
+        Entry.</para>
+    <screenshot>
+        <title>Role maintenance page</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="80%" align="center"
+                    fileref="resources/images/dhis2UserManual/role_maintenance_page.png"
+                    format="PNG" wordsize=""/>
+            </imageobject>
+        </mediaobject>
+    </screenshot>
+    <para>Next you will specify the particular data set(s) that are to be made available to the
+        particular role. You will also need to specify the type of <emphasis role="italic"
+            >Authority</emphasis> to be given to the particular user. For each of the three options
+        namely Datasets, Reports and Authorities user can select multiple options from the scroll
+        down menu provided against each field. A user can choose multiple options either by moving
+        them one-by-one.</para>
+    <para>In order for particular users to be able to enter data, you must add them to both a
+        dataset as well as an organisational unit level. You can also select multiple datasets
+        individually by pressing the Ctrl key on the keyboard and clicking on individual
+        datasets.</para>
+    <para>Finally when you have entered the required fields click on <guibutton>Save</guibutton>
+        which is located on the lower part of the displayed screen. The desired user role and
+        related authorisation will be saved to the database, and can then be assigned to a
+        particular user.</para>
+</section>
