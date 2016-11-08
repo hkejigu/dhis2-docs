@@ -54,4 +54,24 @@
         which is located on the lower part of the displayed screen. The desired user role and
         related authorisation will be saved to the database, and can then be assigned to a
         particular user.</para>
+    <section>
+        <title>Create a user role</title>
+        <para/>
+    </section>
+    <section>
+        <title>Edit user roles</title>
+        <para/>
+    </section>
+    <section>
+        <title>Delete user roles</title>
+        <para/>
+    </section>
+    <section>
+        <title>Display details of user roles</title>
+        <para/>
+    </section>
+    <section>
+        <title>Change sharing settings for user roles</title>
+        <para/>
+    </section>
 </section>
