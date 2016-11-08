@@ -28,4 +28,15 @@ At the moment, I can only do x-refs to section 1 tags.
             <para>Click <emphasis role="bold">Save</emphasis>.</para>
         </listitem>
     </orderedlist>
+    <section>
+        <title>Clone user</title>
+        <para>You can search for specific user names in the user list by entering the name in the
+            <emphasis role="italic">Filter by name</emphasis> field as shown above. Some
+            non-standard functions are available by clicking on each user in the list:<itemizedlist>
+                <listitem>
+                    <para>Replicate: This will create an exact copy of the user. You will be asked
+                        to enter a new username and password for the replicated account.</para>
+                </listitem>
+            </itemizedlist></para>
+    </section>
 </section>

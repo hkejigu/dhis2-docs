@@ -12,66 +12,13 @@
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="mgt_userrole">
     <title>Manage user roles</title>
-    <para>As part of creating a user name you are required to define the user role. Do so by
-        clicking on <emphasis role="italic">User Role</emphasis> on the left side of the displayed
-        screen. This will lead you to the User role management page where you can click on
-            <guibutton>Add new</guibutton> to create a new role.</para>
-    <screenshot>
-        <title>Add new user role</title>
-        <mediaobject>
-            <imageobject>
-                <imagedata width="80%" align="center"
-                    fileref="resources/images/dhis2UserManual/add_user_role.png" format="PNG"/>
-            </imageobject>
-        </mediaobject>
-    </screenshot>
-    <para>The following screen will open and here in the first text box you need to give a <emphasis
-            role="italic">Name</emphasis> of the Role such as Super User, Admin User, etc. The
-        second text box called <emphasis role="italic">Description</emphasis> gives more information
-        about the type of User Role that is being created for e.g. State Admin User, District Data
-        Entry.</para>
-    <screenshot>
-        <title>Role maintenance page</title>
-        <mediaobject>
-            <imageobject>
-                <imagedata width="80%" align="center"
-                    fileref="resources/images/dhis2UserManual/role_maintenance_page.png"
-                    format="PNG" wordsize=""/>
-            </imageobject>
-        </mediaobject>
-    </screenshot>
-    <para>Next you will specify the particular data set(s) that are to be made available to the
-        particular role. You will also need to specify the type of <emphasis role="italic"
-            >Authority</emphasis> to be given to the particular user. For each of the three options
-        namely Datasets, Reports and Authorities user can select multiple options from the scroll
-        down menu provided against each field. A user can choose multiple options either by moving
-        them one-by-one.</para>
-    <para>In order for particular users to be able to enter data, you must add them to both a
-        dataset as well as an organisational unit level. You can also select multiple datasets
-        individually by pressing the Ctrl key on the keyboard and clicking on individual
-        datasets.</para>
-    <para>Finally when you have entered the required fields click on <guibutton>Save</guibutton>
-        which is located on the lower part of the displayed screen. The desired user role and
-        related authorisation will be saved to the database, and can then be assigned to a
-        particular user.</para>
-    <section>
-        <title>Create a user role</title>
-        <para/>
-    </section>
-    <section>
-        <title>Edit user roles</title>
-        <para/>
-    </section>
-    <section>
-        <title>Delete user roles</title>
-        <para/>
-    </section>
-    <section>
-        <title>Display details of user roles</title>
-        <para/>
-    </section>
-    <section>
-        <title>Change sharing settings for user roles</title>
-        <para/>
-    </section>
+   
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="t_userrole_create.xml" encoding="UTF-8"/>
+    
+    
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../common/user_edit.xml" encoding="UTF-8"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../common/user_delete.xml" encoding="UTF-8"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../common/user_display.xml" encoding="UTF-8"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="../common/user_share.xml" encoding="UTF-8"/>
+    
 </section>

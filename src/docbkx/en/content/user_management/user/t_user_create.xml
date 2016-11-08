@@ -12,5 +12,188 @@
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="create_user">
     <title>Create a user</title>
-    <para></para>
+    <screenshot>
+        <title>Select Users menu item</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="80%" align="center"
+                    fileref="resources/images/dhis2UserManual/select_user_menu.png" format="PNG"/>
+            </imageobject>
+        </mediaobject>
+    </screenshot>
+    <para>User accounts already registered will appear as a list as seen below.</para>
+    <screenshot>
+        <title>Search by user name</title>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="80%" align="center"
+                    fileref="resources/images/dhis2UserManual/search_user_by_name.png" format="PNG"
+                />
+            </imageobject>
+        </mediaobject>
+    </screenshot>
+    <section>
+        <title>Create user</title>
+        <para>Under particular user role there can be more than one user. To manage users, click on
+                <emphasis role="italic">User</emphasis> on the left side of the screen. This will
+            lead you to the <emphasis role="italic">User management</emphasis> page.</para>
+        <para>To add a new user, follow these steps:</para>
+        <orderedlist>
+            <listitem>
+                <para>Click on the <guibutton>Add New</guibutton> button.</para>
+            </listitem>
+            <listitem>
+                <para>Choose whether you want to fill in all the personal user information now, or
+                    invite the user by email to complete the rest of the user information:</para>
+                <itemizedlist>
+                    <listitem>
+                        <para><emphasis role="italic">Create account with user details</emphasis> -
+                            Choose this if you would like to enter all the details of the new user
+                            such as name, password, etc.</para>
+                        <para>If you choose this action, then enter the following information: user
+                            name, password, surname, first name, E-mail, OpenID account (if any) and
+                            mobile phone number (if any).</para>
+                        <para>After you finish adding the user, the account will be ready for them
+                            to use with the user name and password that you supply.</para>
+                        <screenshot>
+                            <title>Select Users menu item</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata width="80%" align="center"
+                                        fileref="resources/images/dhis2UserManual/user_management_details.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                    </listitem>
+                    <listitem>
+                        <para><emphasis role="italic">Email invitation to create account</emphasis>
+                            - Choose this if you would like to send by email an invitation for the
+                            user to return to the system and finish setting up their user account.
+                            The user will then return to the system and fill in most of their
+                            personal information. The account that the user finishes setting up will
+                            be limited according to how you configure it below.</para>
+                        <para>Note that you may not select this option to create an account with
+                            &quot;critical&quot; system authorities such as All, Scheduling
+                            Administration, Perform maintenance tasks, Merge organisation units,
+                            Eliminate duplicate data elements, SQL View Management, Change system
+                            settings, and List, Add or Delete user roles.</para>
+                        <para>If you choose this action, then enter the email address to which the
+                            invitation should be sent. If you want to, you may also enter the user
+                            name that the account will have. If you leave the username empty, then
+                            the user may choose their own username when they respond to the
+                            invitation (as long as it is not taken already for another user.)</para>
+                        <para>After you finish adding the new user, two emails will be sent to the
+                            address you provided. One contains a unique web link by which the user
+                            can return to the system and activate their account by entering the rest
+                            of their user information. The other email contains a unique code that
+                            they must enter into the system in order to complete the registration,
+                            after following the link in the first email. The user must finish
+                            setting up the account within three months, or the invitation becomes
+                            invalid.</para>
+                        <screenshot>
+                            <title>Select Users menu item</title>
+                            <mediaobject>
+                                <imageobject>
+                                    <imagedata width="80%" align="center"
+                                        fileref="resources/images/dhis2UserManual/user_management_invite.png"
+                                        format="PNG"/>
+                                </imageobject>
+                            </mediaobject>
+                        </screenshot>
+                    </listitem>
+                </itemizedlist>
+            </listitem>
+            <listitem>
+                <para>Select the <emphasis role="italic">Interface language</emphasis> for the user.
+                    You may choose a language into which fixed elements of the DHIS2 user interface
+                    have been translated.</para>
+            </listitem>
+            <listitem>
+                <para>Select the <emphasis role="italic">Database language</emphasis> for the user.
+                    You may choose a language into which implementation-supplied items have been
+                    translated in the database, for example data element names, organisation unit
+                    level names, etc.</para>
+            </listitem>
+            <listitem>
+                <para>Users must be assigned to at least one data capture and maintenance
+                    organisation unit. Users will have access to all children of the organisation
+                    units which have been assigned to them. For instance, if a user has been
+                    assigned to a district which has several facilities contained in the district,
+                    the user would have access to the district&apos;s data, as well as all of the
+                    facilities contained within the district. The data approval organisation units
+                    control for which organisation units the user can do data entry.</para>
+            </listitem>
+            <listitem>
+                <para>Users can be assigned to any number of data view organisation units. This
+                    controls which organisation units the user can view aggregated data for in
+                    analysis modules.</para>
+                <important>
+                    <para> Giving access to an organisation unit implicitly gives access to all
+                        organisation unit below it in the organisation unit hierarchy. Thus, you
+                        should not select the descendants of an orgunit which you have already
+                        selected. As an example, if the user has been assigned to a disitrct, you
+                        should not (and not need to) select the facilities within that
+                        district.</para>
+                    <para>Note that data view organisation units are optional. If you do not specify
+                        any, the user will have access to the full organisation unit hierarchy for
+                        viewing aggregated data. As with the data capture organisation units,
+                            <emphasis>you should not select descendant organisation units of a unit
+                            which you have already selected</emphasis>. </para>
+                </important>
+                <para>In several places in the analysis modules one can select &quot;user
+                    organisation unit&quot; for the organisation unit dimension. This mechanism will
+                    first attempt to use the data view organisation units linked to the current
+                    user. If not found, it will use the data capture organisation units. If the user
+                    has been assigned to multiple organisation units, the use of &quot;user
+                    organisation unit&quot; may result in unpredictable behavior.</para>
+                <screenshot>
+                    <title>User management screen</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="80%" align="center"
+                                fileref="resources/images/dhis2UserManual/user_management_fewer_options.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </listitem>
+            <listitem>
+                <para>(Click on <emphasis role="italic">Show more options</emphasis>.) You may
+                    optionally assign users to user groups on this page.</para>
+            </listitem>
+            <listitem>
+                <para>(Click on <emphasis role="italic">Show more options</emphasis>.) You may
+                    optionally restrict the values this user sees in data analytics by selecting
+                    dimensions that will restrict the users view. For example, let&apos;s say you
+                    have defined <emphasis role="italic">Implementing Partner</emphasis> as a
+                    category option group set, and you have shared with this user only one or more
+                    specific implementing partners (category option groups.) If you want to insure
+                    that the user does not see totals in analytics that include values from other
+                    groups, assign <emphasis role="italic">Implementing Partner</emphasis> to this
+                    user. This insures that any data visible to the user through DHIS2 analytics
+                    will be filtered to select only the Implementing Partner category option
+                    group(s) which are visible to the user.</para>
+                <screenshot>
+                    <title>User management screen</title>
+                    <mediaobject>
+                        <imageobject>
+                            <imagedata width="80%" align="center"
+                                fileref="resources/images/dhis2UserManual/user_management_more_options.png"
+                                format="PNG"/>
+                        </imageobject>
+                    </mediaobject>
+                </screenshot>
+            </listitem>
+            <listitem>
+                <para> Click on the <guibutton>Add</guibutton> button to complete adding the new
+                    user.</para>
+            </listitem>
+        </orderedlist>
+        <para>The recently created new user can be seen in main <emphasis role="italic">User
+                management</emphasis> screen</para>
+        <para>You can edit (like password, surname, etc.) and delete the details of new/old users by
+            selecting corresponding User’s <guibutton>Edit</guibutton> and
+                <guibutton>Remove</guibutton> menu options.</para>
+    </section>
 </section>

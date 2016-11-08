@@ -17,4 +17,5 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./user_role/toc_userrole.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="./user_group/toc_usergroup.xml" encoding="UTF-8"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="t_open_id.xml" encoding="UTF-8"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="t_mgt_other_users.xml" encoding="UTF-8"/>
 </chapter>
