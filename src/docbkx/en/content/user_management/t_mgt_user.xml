@@ -230,21 +230,63 @@
         <para/>
     </section>
     <section>
+        <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
         <title>View users by organisation unit</title>
+        <?oxy_custom_end?>
         <para>The <emphasis role="italic">User by organisation unit</emphasis> function allows you
             see which users have been assigned to a particular organisation unit. Simply select the
             organisation unit from the tree on the left, and a list of users which have been
             assigned to this particular organisation unit will be displayed</para>
     </section>
     <section>
-        <title>Managed users</title>
+        <title>Edit users</title>
+        <para/>
+    </section>
+    <section>
+        <title>Delete users</title>
+        <para/>
+    </section>
+    <section>
+        <title>Display details of users</title>
+        <para/>
+    </section>
+    <section>
+        <title>Change sharing settings for users</title>
+        <para/>
+    </section>
+    <section>
+        <title>View a user's profile</title>
+        <para/>
+    </section>
+    <section>
+        <title>Disable users</title>
+        <para/>
+    </section>
+    <section>
+        <title>Assign search organisation units to users</title>
+        <para/>
+    </section>
+    <section>
+        <title>Delete
+            <?oxy_comment_start author="cecilia" timestamp="20161108T140237+0100" comment="Logged in user?
+What is the point of this function?"?>current<?oxy_comment_end?>
+            user</title>
+        <para/>
+    </section>
+    <section>
+        <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
+        <title>Managed
+            <?oxy_comment_start author="cecilia" timestamp="20161108T140711+0100" comment="This is a task:
+How to set up users to manage other users. 
+or similar."?>users<?oxy_comment_end?></title>
+        <?oxy_custom_end?>
         <para>DHIS2 supports a concept for user management referred to as <emphasis role="italic"
-                >managed users</emphasis> which which allows to explicitly define which users should
-            be allowed to manage or modify which users. To &quot;manage a user&quot; implies that
-            you can see and modify that user. The basic concept for user management is that you can
-            see and modify users which you have been granted all of the authorities; in other words
-            you can modify users which have a subset of your own authorities. The managed users
-            concept gives you greater control over this.</para>
+                >managed users</emphasis> which  allows to explicitly define which users should be
+            allowed to manage or modify which users. To &quot;manage a user&quot; implies that you
+            can see and modify that user. The basic concept for user management is that you can see
+            and modify users which you have been granted all of the authorities; in other words you
+            can modify users which have a subset of your own authorities. The managed users concept
+            gives you greater control over this.</para>
         <para>The managed users concept allows you to define which users should be able to manage
             which users. This is configured through user groups and memberships within such groups.
             A user group can be configured to be allowed to manage other user groups from the

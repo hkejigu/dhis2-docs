@@ -11,9 +11,9 @@
     xmlns:mth="http://www.w3.org/1998/Math/MathML"
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="about_user_userrole">
-    <title>About users and user roles</title>
+    <title>About users, user roles and user groups</title>
     <para>Multiple users can access DHIS2 simultaneously and each user can have different
-        permissions. You can fine tune these permissions so that certain users can only enter data,
+        permissions. You can fine-tune these permissions so that certain users can only enter data,
         while others can only generate reports.</para>
     <itemizedlist>
         <listitem>
@@ -43,7 +43,7 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
         </listitem>
     </itemizedlist>
     <table frame="all">
-        <title>User and user groups objects in the Users app</title>
+        <title>User objects in the Users app</title>
         <tgroup cols="2">
             <colspec colname="c1" colnum="1" colwidth="1.0*"/>
             <colspec colname="c2" colnum="2" colwidth="1.0*"/>
@@ -71,6 +71,15 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                 <row>
                     <entry>
                         <para>User role</para>
+                    </entry>
+                    <entry>
+                        <para>Create, edit, clone, share, delete, show details and
+                            <?oxy_comment_start author="cecilia" timestamp="20161107T144749+0100" comment="And disable? - verify"?>translate<?oxy_comment_end?></para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>User group</para>
                     </entry>
                     <entry>
                         <para>Create, edit, clone, share, delete, show details and
