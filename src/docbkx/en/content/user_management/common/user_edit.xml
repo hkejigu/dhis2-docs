@@ -6,26 +6,18 @@
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:svg="http://www.w3.org/2000/svg" xmlns:mth="http://www.w3.org/1998/Math/MathML"
     xmlns:db="http://docbook.org/ns/docbook">
-    <title>Edit metadata objects</title>
+    <title>Edit user objects</title>
     <orderedlist>
         <listitem>
-            <para>Open the <emphasis role="bold">Maintenance</emphasis> app and find the type of
-                <?oxy_comment_start author="cecilia" timestamp="20160926T144727+0200" comment="Decide on term:
-metadata object
-object type
-metadata..."?>metadata
-                object <?oxy_comment_end?>you want to edit.</para>
+            <para>Open the <emphasis role="bold">Users</emphasis> app and find the type of user
+                object you want to edit.</para>
         </listitem>
         <listitem>
-            <para>In the object list, click the options menu and select <emphasis role="bold"
+            <para>In the object list, click the relevant object and select <emphasis role="bold"
                     >Edit</emphasis>.</para>
         </listitem>
         <listitem>
-            <para>Modify the options you
-                <?oxy_comment_start author="cecilia" timestamp="20160510T160124+0200" comment="At next revision, add link to previous section
-&quot;For details about each option, refer to section Create a data element.&quot;
-At the moment, I can only do x-refs to section 1 tags.
-" flag="done"?>want<?oxy_comment_end?>.</para>
+            <para>Modify the options you want.</para>
         </listitem>
         <listitem>
             <para>Click <emphasis role="bold">Save</emphasis>.</para>

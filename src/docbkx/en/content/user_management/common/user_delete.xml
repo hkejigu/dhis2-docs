@@ -6,18 +6,18 @@
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:svg="http://www.w3.org/2000/svg" xmlns:mth="http://www.w3.org/1998/Math/MathML"
     xmlns:db="http://docbook.org/ns/docbook">
-    <title>Delete metadata objects</title>
+    <title>Delete user objects</title>
     <orderedlist>
         <listitem>
-            <para>Open the <emphasis role="bold">Maintenance</emphasis> app and find the type of
-                metadata object you want to delete.</para>
+            <para>Open the <emphasis role="bold">Users</emphasis> app and find the type of user
+                object you want to delete.</para>
         </listitem>
         <listitem>
-            <para>In the object list, click the options menu and select <emphasis role="bold"
-                    >Delete</emphasis>.</para>
+            <para>In the object list, click the relevant object and select <emphasis role="bold"
+                    >Remove</emphasis>.</para>
         </listitem>
         <listitem>
-            <para>Click <emphasis role="bold">Confirm</emphasis>.</para>
+            <para>Click <emphasis role="bold">OK</emphasis> to confirm.</para>
         </listitem>
     </orderedlist>
 </section>

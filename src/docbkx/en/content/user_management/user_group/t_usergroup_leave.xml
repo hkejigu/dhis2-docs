@@ -12,5 +12,14 @@
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="leave_usergroup">
     <title>Leave user groups</title>
-    <para></para>
+    <orderedlist>
+        <listitem>
+            <para>Open the <emphasis role="bold">Users</emphasis> app and click <emphasis
+                    role="bold">User group</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>In the list, click the relevant user group and select <emphasis role="bold">Leave
+                    group</emphasis>.</para>
+        </listitem>
+    </orderedlist>
 </section>

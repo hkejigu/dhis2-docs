@@ -6,35 +6,28 @@
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:svg="http://www.w3.org/2000/svg" xmlns:mth="http://www.w3.org/1998/Math/MathML"
     xmlns:db="http://docbook.org/ns/docbook" xml:id="about_user_userrole">
-    <title>About user management</title>
+    <title>About user
+        <?oxy_comment_start author="cecilia" timestamp="20161110T105014+0100" comment="Permissions or authorities?"?>management<?oxy_comment_end?></title>
     <para>Multiple users can access DHIS2 simultaneously and each user can have different
-        permissions. You can fine-tune these permissions so that certain users can only enter data,
-        while others can only generate reports.</para>
-    <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
-    <para>DHIS2 comes with an advanced solution for fine-grained management of users and user roles.
-        The system is completely flexible in terms of the number and type of users and roles
-        allowed.</para>
-    <?oxy_custom_end?>
+        permissions. You can fine-tune these permissions so that certain users only can enter data,
+        while others only can generate reports.</para>
     <itemizedlist>
         <listitem>
-            <para>You can create as many user names
-                <?oxy_comment_start author="cecilia" timestamp="20161107T150034+0100" comment="User name = user?"?>as<?oxy_comment_end?>
-                you need.</para>
+            <para>You can create as many users, user roles and user groups as you need.</para>
         </listitem>
         <listitem>
-            <para>Each
-                <?oxy_comment_start author="cecilia" timestamp="20161107T150628+0100" comment="Directly on the user or via a user role?"?>user<?oxy_comment_end?>
-                can be assigned certain privileges.</para>
+            <para>You can assign specific permissions to each
+                <?oxy_comment_start author="cecilia" timestamp="20161107T150628+0100" comment="Directly on the user or via a user role?"?>user<?oxy_comment_end?>.</para>
         </listitem>
         <listitem>
             <para>You can create multiple user roles each with their own set of permissions.</para>
         </listitem>
         <listitem>
-            <para>Assign user roles to users to grant the users certain privileges within
-                DHIS2.</para>
+            <para>You can assign user roles to users to grant the users the corresponding set of
+                permissions.</para>
         </listitem>
         <listitem>
-            <para>You can assign each user to certain
+            <para>You can assign each user to
                 <?oxy_comment_start author="cecilia" timestamp="20161107T145705+0100" comment="The only thing that happens when you assign a user to an org unit? 
 You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                 units
@@ -64,28 +57,31 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                     <entry>
                         <para>User</para>
                     </entry>
+                    <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
                     <entry>
                         <para>Create, edit, clone, share, delete,
                             <?oxy_comment_start author="cecilia" timestamp="20161107T144754+0100" comment="And disable? - verify"?>show<?oxy_comment_end?>
                             details and translate</para>
                     </entry>
+                    <?oxy_custom_end?>
                 </row>
                 <row>
                     <entry>
                         <para>User role</para>
                     </entry>
+                    <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
                     <entry>
                         <para>Create, edit, clone, share, delete, show details and
                             <?oxy_comment_start author="cecilia" timestamp="20161107T144749+0100" comment="And disable? - verify"?>translate<?oxy_comment_end?></para>
                     </entry>
+                    <?oxy_custom_end?>
                 </row>
                 <row>
                     <entry>
                         <para>User group</para>
                     </entry>
                     <entry>
-                        <para>Create, edit, clone, share, delete, show details and
-                            <?oxy_comment_start author="cecilia" timestamp="20161107T144749+0100" comment="And disable? - verify"?>translate<?oxy_comment_end?></para>
+                        <para>Create, edit, join, leave, share, delete and show details</para>
                     </entry>
                 </row>
             </tbody>
@@ -93,13 +89,13 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
     </table>
     <section>
         <title>About users</title>
-        <para>A user in the DHIS2 context is a human who is utilizing the software. Each user in
-            DHIS2 has a user account which is identified by a user name. A user account allows the
-            user to authenticate to system services and be granted authorization to access them. To
-            log in (authenticate) the user is required to enter a valid combination of user name and
+        <para>Each user in DHIS2 has a user account which is identified by a user name. A user
+            account allows the user to authenticate to system services and be granted authorization
+            to access them. To log in the user must enter a valid combination of user name and
             password. If that combination matches a user name and password registered in the
             database, the user is allowed to enter.</para>
-        <para>Give each user:</para>
+        <para>When you create a user, you should register the following information for each
+            user:</para>
         <itemizedlist>
             <listitem>
                 <para>a first name</para>
@@ -114,10 +110,11 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                 <para>a phone number</para>
             </listitem>
         </itemizedlist>
-        <para>This information is important to get correct when creating new users since certain
-            functions in DHIS2 rely on sending emails to notify users about important events. It is
-            also useful to be able to communicate to users directly over email and telephone to
-            discuss data management issues or to sort out potential problems with the system.</para>
+        <para>The contact information is important to get correct when creating new users since
+            certain functions in DHIS2 rely on sending emails to notify users about important
+            events. It is also useful to be able to communicate to users directly over email and
+            telephone to discuss data management issues or to sort out potential problems with the
+            system.</para>
         <para>A user in DHIS2 is associated with an organisation unit. This implies that when
             creating a new user account that account should be associated to the location where user
             works. For instance when creating a user account for a district record officer that user
@@ -153,10 +150,76 @@ Event Reports and Reports?"?>e
     </section>
     <section>
         <title>About user roles</title>
-        <para>A user role in the DHIS2 context is a group of authorities. An authority in this
-            regard means the permission to perform one or more specific tasks. For instance, a user
-            role may contain authorities to create a new data element, update an organisation unit
-            or view a report. Such a group of authorities constitutes a user role.</para>
+        <informaltable frame="all">
+            <tgroup cols="3">
+                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+                <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                <colspec colname="c3" colnum="3" colwidth="1.0*"/>
+                <thead>
+                    <row>
+                        <entry>
+                            <para>Term</para>
+                        </entry>
+                        <entry>
+                            <para>Definition</para>
+                        </entry>
+                        <entry>
+                            <para>Example</para>
+                        </entry>
+                    </row>
+                </thead>
+                <tbody>
+                    <row>
+                        <entry>
+                            <para>Authority
+                                <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>(or
+                                Permission?)<?oxy_custom_end?></para>
+                        </entry>
+                        <entry>
+                            <para>A permission to perform one or several specific tasks</para>
+                        </entry>
+                        <entry>
+                            <para>Create a new data element</para>
+                            <para>Update an organisation unit</para>
+                            <para>View a report</para>
+                        </entry>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>User</para>
+                        </entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>User role</para>
+                        </entry>
+                        <entry>
+                            <para>A group of authorities</para>
+                        </entry>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry>
+                            <para>User group</para>
+                        </entry>
+                        <entry/>
+                        <entry/>
+                    </row>
+                    <row>
+                        <entry/>
+                        <entry/>
+                        <entry/>
+                    </row>
+                </tbody>
+            </tgroup>
+        </informaltable>
+        <para>A user role in the DHIS2 context is a group of authorities. </para>
+        <para>An authority in this regard means the permission to perform one or more specific
+            tasks. For instance, a user role may contain authorities to create a new data element,
+            update an organisation unit or view a report. Such a group of authorities constitutes a
+            user role.</para>
         <para>When creating user roles such positions within the health system should be kept in
             mind and it is often sensible to create a user role dedicated for each of those
             positions. The process of creating user roles should be aligned with the process of
@@ -190,36 +253,15 @@ Event Reports and Reports?"?>e
             more efficient and support the facility users better.</para>
     </section>
     <section>
-        <title>About user groups</title>
+        <title>About user
+            <?oxy_comment_start author="cecilia" timestamp="20161110T105030+0100" comment="Add information"?>groups<?oxy_comment_end?></title>
         <para/>
     </section>
     <section>
-        <title>Example: user management</title>
+        <title>Example: user
+            <?oxy_comment_start author="cecilia" timestamp="20161110T105041+0100" comment="Complete example"?>management<?oxy_comment_end?></title>
         <para>In a health system, the users are logically grouped with respect to the task they
             perform and the position they occupy. Examples of common positions are:</para>
-        <itemizedlist>
-            <listitem>
-                <para>System administrators</para>
-            </listitem>
-            <listitem>
-                <para>National health managers</para>
-            </listitem>
-            <listitem>
-                <para>National health information system division officers (HISO)</para>
-            </listitem>
-            <listitem>
-                <para>Province health managers</para>
-            </listitem>
-            <listitem>
-                <para>District health records and information officers (DHRIO)</para>
-            </listitem>
-            <listitem>
-                <para>Facility health records and information officers (HRIO)</para>
-            </listitem>
-            <listitem>
-                <para>Data entry clerks</para>
-            </listitem>
-        </itemizedlist>
         <informaltable frame="all">
             <tgroup cols="4">
                 <colspec colname="c1" colnum="1" colwidth="1.0*"/>
@@ -284,7 +326,9 @@ Event Reports and Reports?"?>e
                     </row>
                     <row>
                         <entry>
+                            <para>National health information system division officers (HISO)</para>
                             <para>District health records and information officers (DHRIO)</para>
+                            <para>Facility health records and information officers (HRIO)</para>
                         </entry>
                         <entry>
                             <para>Enter data that comes from facilities which are not able to do so
@@ -301,40 +345,18 @@ Event Reports and Reports?"?>e
                         </entry>
                     </row>
                     <row>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                        <entry/>
+                        <entry>
+                            <para>Data entry clerks</para>
+                        </entry>
+                        <entry>
+                            <para>-</para>
+                        </entry>
+                        <entry>
+                            <para>-</para>
+                        </entry>
+                        <entry>
+                            <para>-</para>
+                        </entry>
                     </row>
                 </tbody>
             </tgroup>

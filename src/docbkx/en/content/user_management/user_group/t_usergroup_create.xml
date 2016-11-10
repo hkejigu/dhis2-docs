@@ -12,5 +12,31 @@
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="create_usergroup">
     <title>Create a user group</title>
-    <para></para>
+    <orderedlist>
+        <listitem>
+            <para>Open the <emphasis role="bold">Users</emphasis> app and click <emphasis
+                    role="bold">User group</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>Click <emphasis role="bold">Add new</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>In the
+                    <?oxy_comment_start author="cecilia" timestamp="20160624T160524+0200" comment="At next releaase:
+For SME: Must the name be unique?"?><emphasis
+                    role="bold">Name</emphasis><?oxy_comment_end?> field, type the name of the user
+                group.</para>
+        </listitem>
+        <listitem>
+            <para>In the <emphasis role="bold">Available users</emphasis> section, double-click the
+                users you want to add to the user group.</para>
+        </listitem>
+        <listitem>
+            <para>In the <emphasis role="bold">Available user groups</emphasis> section,
+                double-click the user groups you want to add to the user group.</para>
+        </listitem>
+        <listitem>
+            <para>Click <emphasis role="bold">Add</emphasis>.</para>
+        </listitem>
+    </orderedlist>
 </section>
