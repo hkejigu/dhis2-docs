@@ -36,7 +36,8 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
         </listitem>
     </itemizedlist>
     <para>You manager users, user roles and user groups in the <emphasis role="bold"
-            >Users</emphasis> app.</para>
+            >Users</emphasis>
+        <?oxy_comment_start author="cecilia" timestamp="20161110T134939+0100" comment="Correct that you can&apos;t translate the user objects?"?>app<?oxy_comment_end?>.</para>
     <table frame="all">
         <title>Objects in the Users app</title>
         <tgroup cols="2">
@@ -57,24 +58,18 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                     <entry>
                         <para>User</para>
                     </entry>
-                    <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
                     <entry>
-                        <para>Create, edit, clone, share, delete,
-                            <?oxy_comment_start author="cecilia" timestamp="20161107T144754+0100" comment="And disable? - verify"?>show<?oxy_comment_end?>
-                            details and translate</para>
+                        <para>Create, edit, clone, disable, assign search organisation units, share,
+                            delete and show details</para>
                     </entry>
-                    <?oxy_custom_end?>
                 </row>
                 <row>
                     <entry>
                         <para>User role</para>
                     </entry>
-                    <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
                     <entry>
-                        <para>Create, edit, clone, share, delete, show details and
-                            <?oxy_comment_start author="cecilia" timestamp="20161107T144749+0100" comment="And disable? - verify"?>translate<?oxy_comment_end?></para>
+                        <para>Create, edit, share, delete and show details</para>
                     </entry>
-                    <?oxy_custom_end?>
                 </row>
                 <row>
                     <entry>

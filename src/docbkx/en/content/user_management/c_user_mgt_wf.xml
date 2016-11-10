@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<section version="5.0"
+    xsi:schemaLocation="http://docbook.org/ns/docbook http://www.docbook.org/xml/5.0/xsd/docbook.xsd"
+    xmlns="http://docbook.org/ns/docbook"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:xl="http://www.w3.org/1999/xlink"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:mth="http://www.w3.org/1998/Math/MathML"
+    xmlns:db="http://docbook.org/ns/docbook"
+    xml:id="user_mgt_workflow">
+    <title>Workflow</title>
+    <orderedlist>
+        <listitem>
+            <para>Define ...</para>
+        </listitem>
+        <listitem>
+            <para>Create a user role.</para>
+        </listitem>
+        <listitem>
+            <para>Create a user.</para>
+            <para/>
+        </listitem>
+        <listitem>
+            <para>Assign user roles to a user.</para>
+        </listitem>
+        <listitem>
+            <para>Assign a user to organisation units.(?)</para>
+        </listitem>
+    </orderedlist>
+    <para>In order for particular users to be able to enter data, you must add them to both a data
+        set and an organisational unit
+        <?oxy_comment_start author="cecilia" timestamp="20161110T141614+0100" comment="Organisation unit or organisation unit level?"?>level<?oxy_comment_end?>.</para>
+</section>

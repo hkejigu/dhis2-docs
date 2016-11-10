@@ -11,25 +11,8 @@
     xmlns:mth="http://www.w3.org/1998/Math/MathML"
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="create_userrole">
-    <title>Create a user role</title>
-    <para>As part of creating a user name you are required to define the user role. Do so by
-        clicking on <emphasis role="italic">User Role</emphasis> on the left side of the displayed
-        screen. This will lead you to the User role management page where you can click on
-            <guibutton>Add new</guibutton> to create a new role.</para>
-    <screenshot>
-        <title>Add new user role</title>
-        <mediaobject>
-            <imageobject>
-                <imagedata width="80%" align="center"
-                    fileref="resources/images/dhis2UserManual/add_user_role.png" format="PNG"/>
-            </imageobject>
-        </mediaobject>
-    </screenshot>
-    <para>The following screen will open and here in the first text box you need to give a <emphasis
-            role="italic">Name</emphasis> of the Role such as Super User, Admin User, etc. The
-        second text box called <emphasis role="italic">Description</emphasis> gives more information
-        about the type of User Role that is being created for e.g. State Admin User, District Data
-        Entry.</para>
+    <title>Create a user
+        <?oxy_comment_start author="cecilia" timestamp="20161110T140711+0100" comment="Which fields are mandatory?"?>role<?oxy_comment_end?></title>
     <screenshot>
         <title>Role maintenance page</title>
         <mediaobject>
@@ -40,23 +23,53 @@
             </imageobject>
         </mediaobject>
     </screenshot>
-    <para>Next you will specify the particular data set(s) that are to be made available to the
-        particular role. You will also need to specify the type of <emphasis role="italic"
-            >Authority</emphasis> to be given to the particular user. For each of the three options
-        namely Datasets, Reports and Authorities user can select multiple options from the scroll
-        down menu provided against each field. A user can choose multiple options either by moving
-        them one-by-one.</para>
-    <para>In order for particular users to be able to enter data, you must add them to both a
-        dataset as well as an organisational unit level. You can also select multiple datasets
-        individually by pressing the Ctrl key on the keyboard and clicking on individual
-        datasets.</para>
-    <para>Finally when you have entered the required fields click on <guibutton>Save</guibutton>
-        which is located on the lower part of the displayed screen. The desired user role and
-        related authorisation will be saved to the database, and can then be assigned to a
-        particular user.</para>
     <orderedlist>
         <listitem>
-            <para/>
+            <para>Open the <emphasis role="bold">Users</emphasis> app and click <emphasis
+                    role="bold">User role</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>Click <emphasis role="bold">Add new</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>Enter a
+                    <?oxy_comment_start author="cecilia" timestamp="20160624T160524+0200" comment="At next releaase:
+For SME: Must the name be unique?"?><emphasis
+                    role="bold">Name</emphasis><?oxy_comment_end?>, for example "Super user" or
+                "Admin user".</para>
+        </listitem>
+        <listitem>
+            <para>Enter a <emphasis role="bold">Description</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>In the <emphasis role="bold">Data sets</emphasis> section, double-click the data
+                sets you want the user role to have access to.</para>
+        </listitem>
+        <listitem>
+            <para>In the <emphasis role="bold">Programs</emphasis> section, double-click the
+                <?oxy_comment_start author="cecilia" timestamp="20161110T163046+0100" comment="Which type of access? read and write?"?>programs<?oxy_comment_end?>
+                you want the user role to have access to.</para>
+        </listitem>
+        <listitem>
+            <para><emphasis role="bold">Authorities</emphasis> section, double-click the authorities
+                you want to give to the user role.</para>
+        </listitem>
+        <listitem>
+            <para>Click <emphasis role="bold">Add</emphasis>.</para>
         </listitem>
     </orderedlist>
+    <tip>
+        <para>You can select multiple data sets, programs or
+            <?oxy_comment_start author="cecilia" timestamp="20161110T172105+0100" comment="Review tip, verify that it is inline with the Mtn app."?>authorities<?oxy_comment_end?>:</para>
+        <itemizedlist>
+            <listitem>
+                <para>One by one: press the Ctrl key and click the items one by one, then click the
+                    right arrow.</para>
+            </listitem>
+            <listitem>
+                <para>In a series: press the Shift key and select the first and last item in the
+                    series, then click the right arrow.</para>
+            </listitem>
+        </itemizedlist>
+    </tip>
 </section>
