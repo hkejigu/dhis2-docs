@@ -12,12 +12,19 @@
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="disable_user">
     <title>Disable users</title>
-    <para>You can search for specific user names in the user list by entering the name in the
-            <emphasis role="italic">Filter by name</emphasis> field as shown above. Some
-        non-standard functions are available by clicking on each user in the list:<itemizedlist>
-            <listitem>
-                <para>Disable: This will disable the user, meaning that the account is not deleted,
-                    but the user will not be able to log in or use it.</para>
-            </listitem>
-        </itemizedlist></para>
+    <para>You can disable a user. This means that the user's account is not deleted, but the user
+        can't log in or use DHIS2.</para>
+    <orderedlist>
+        <listitem>
+            <para>Open the <emphasis role="bold">Users</emphasis> app and click <emphasis
+                    role="bold">User</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>In the list, click the relevant user and select <emphasis role="bold"
+                    >Disable</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>Click <emphasis role="bold">OK</emphasis> to confirm.</para>
+        </listitem>
+    </orderedlist>
 </section>

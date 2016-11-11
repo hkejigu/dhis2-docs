@@ -13,28 +13,100 @@
         while others only can generate reports.</para>
     <itemizedlist>
         <listitem>
-            <para>You can create as many users, user roles and user groups as you need.</para>
+            <para>You
+                <?oxy_comment_start author="cecilia" timestamp="20161111T134124+0100" comment="review wording &quot;you can&quot;
+"?>can<?oxy_comment_end?>
+                create as many users, user roles and user groups as you need.</para>
         </listitem>
         <listitem>
             <para>You can assign specific permissions to each
                 <?oxy_comment_start author="cecilia" timestamp="20161107T150628+0100" comment="Directly on the user or via a user role?"?>user<?oxy_comment_end?>.</para>
         </listitem>
         <listitem>
-            <para>You can create multiple user roles each with their own set of permissions.</para>
+            <para>You can create multiple user roles each with their own permissions.</para>
         </listitem>
         <listitem>
-            <para>You can assign user roles to users to grant the users the corresponding set of
+            <para>You can assign user roles to users to grant the users the corresponding
                 permissions.</para>
         </listitem>
         <listitem>
             <para>You can assign each user to
                 <?oxy_comment_start author="cecilia" timestamp="20161107T145705+0100" comment="The only thing that happens when you assign a user to an org unit? 
 You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
-                units
-                <?oxy_comment_start author="cecilia" timestamp="20161107T145336+0100" comment="Reword"?>for
-                which they will be enabled to enter data on behalf of.<?oxy_comment_end?></para>
+                units. Then the user can enter data for the assigned organisation units.</para>
         </listitem>
     </itemizedlist>
+    <table frame="all">
+        <title>User management terms and definitions</title>
+        <tgroup cols="3">
+            <colspec colname="c1" colnum="1" colwidth="1.0*"/>
+            <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+            <colspec colname="c3" colnum="3" colwidth="1.0*"/>
+            <thead>
+                <row>
+                    <entry>
+                        <para>Term</para>
+                    </entry>
+                    <entry>
+                        <para>Definition</para>
+                    </entry>
+                    <entry>
+                        <para>Example</para>
+                    </entry>
+                </row>
+            </thead>
+            <tbody>
+                <row>
+                    <entry>
+                        <para>Authority
+                            <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>(or
+                            Permission?)<?oxy_custom_end?></para>
+                    </entry>
+                    <entry>
+                        <para>A permission to perform one or several specific tasks</para>
+                    </entry>
+                    <entry>
+                        <para>Create a new data element</para>
+                        <para>Update an organisation unit</para>
+                        <para>View a report</para>
+                    </entry>
+                </row>
+                <row>
+                    <entry>
+                        <para>User</para>
+                    </entry>
+                    <entry/>
+                    <entry/>
+                </row>
+                <row>
+                    <entry>
+                        <para>User role</para>
+                    </entry>
+                    <entry>
+                        <para>A group of authorities</para>
+                    </entry>
+                    <entry/>
+                </row>
+                <row>
+                    <entry>
+                        <para>User group</para>
+                    </entry>
+                    <entry/>
+                    <entry/>
+                </row>
+                <row>
+                    <entry/>
+                    <entry/>
+                    <entry/>
+                </row>
+                <row>
+                    <entry/>
+                    <entry/>
+                    <entry/>
+                </row>
+            </tbody>
+        </tgroup>
+    </table>
     <para>You manager users, user roles and user groups in the <emphasis role="bold"
             >Users</emphasis>
         <?oxy_comment_start author="cecilia" timestamp="20161110T134939+0100" comment="Correct that you can&apos;t translate the user objects?"?>app<?oxy_comment_end?>.</para>
@@ -59,8 +131,8 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                         <para>User</para>
                     </entry>
                     <entry>
-                        <para>Create, edit, clone, disable, assign search organisation units, share,
-                            delete and show details</para>
+                        <para>Create, edit, clone, disable, assign search organisation units,
+                            display by organisation unit, share, delete and show details</para>
                     </entry>
                 </row>
                 <row>
@@ -145,71 +217,6 @@ Event Reports and Reports?"?>e
     </section>
     <section>
         <title>About user roles</title>
-        <informaltable frame="all">
-            <tgroup cols="3">
-                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-                <colspec colname="c2" colnum="2" colwidth="1.0*"/>
-                <colspec colname="c3" colnum="3" colwidth="1.0*"/>
-                <thead>
-                    <row>
-                        <entry>
-                            <para>Term</para>
-                        </entry>
-                        <entry>
-                            <para>Definition</para>
-                        </entry>
-                        <entry>
-                            <para>Example</para>
-                        </entry>
-                    </row>
-                </thead>
-                <tbody>
-                    <row>
-                        <entry>
-                            <para>Authority
-                                <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>(or
-                                Permission?)<?oxy_custom_end?></para>
-                        </entry>
-                        <entry>
-                            <para>A permission to perform one or several specific tasks</para>
-                        </entry>
-                        <entry>
-                            <para>Create a new data element</para>
-                            <para>Update an organisation unit</para>
-                            <para>View a report</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>User</para>
-                        </entry>
-                        <entry/>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>User role</para>
-                        </entry>
-                        <entry>
-                            <para>A group of authorities</para>
-                        </entry>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>User group</para>
-                        </entry>
-                        <entry/>
-                        <entry/>
-                    </row>
-                    <row>
-                        <entry/>
-                        <entry/>
-                        <entry/>
-                    </row>
-                </tbody>
-            </tgroup>
-        </informaltable>
         <para>A user role in the DHIS2 context is a group of authorities. </para>
         <para>An authority in this regard means the permission to perform one or more specific
             tasks. For instance, a user role may contain authorities to create a new data element,
@@ -251,110 +258,5 @@ Event Reports and Reports?"?>e
         <title>About user
             <?oxy_comment_start author="cecilia" timestamp="20161110T105030+0100" comment="Add information"?>groups<?oxy_comment_end?></title>
         <para/>
-    </section>
-    <section>
-        <title>Example: user
-            <?oxy_comment_start author="cecilia" timestamp="20161110T105041+0100" comment="Complete example"?>management<?oxy_comment_end?></title>
-        <para>In a health system, the users are logically grouped with respect to the task they
-            perform and the position they occupy. Examples of common positions are:</para>
-        <informaltable frame="all">
-            <tgroup cols="4">
-                <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-                <colspec colname="newCol2" colnum="2" colwidth="1*"/>
-                <colspec colname="c2" colnum="3" colwidth="1.0*"/>
-                <colspec colname="c3" colnum="4" colwidth="1.0*"/>
-                <thead>
-                    <row>
-                        <entry>
-                            <para>Position</para>
-                        </entry>
-                        <entry>
-                            <para>Typical tasks</para>
-                        </entry>
-                        <entry>
-                            <para>Recommended authorities</para>
-                        </entry>
-                        <entry>
-                            <para>Comment</para>
-                        </entry>
-                    </row>
-                </thead>
-                <tbody>
-                    <row>
-                        <entry>
-                            <para>System administrators</para>
-                        </entry>
-                        <entry>
-                            <para>Set up the basic structure (metadata) of the system.</para>
-                        </entry>
-                        <entry>
-                            <para>Add, update and delete the core elements of the system, for
-                                example data elements, indicators and data sets.</para>
-                        </entry>
-                        <entry>Only system administrators should modify metadata. <para>If you allow
-                                users outside the system administrators team to modify the metadata,
-                                <?oxy_comment_start author="cecilia" timestamp="20161109T141705+0100" comment="Still correct?"?>it
-                                might lead to problems with
-                                coordination.<?oxy_comment_end?></para><para> is to the system and
-                                should only be performed by the administrators of
-                            system.</para></entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>National health managers</para>
-                            <para>Province health managers</para>
-                        </entry>
-                        <entry>
-                            <para>Monitor and analyse data</para>
-                        </entry>
-                        <entry>
-                            <para>Access to the
-                                <?oxy_comment_start author="cecilia" timestamp="20161109T140537+0100" comment="Which apps?"?>reports<?oxy_comment_end?>
-                                module, the <emphasis role="bold">GIS</emphasis>, <emphasis
-                                    role="bold">Data Quality</emphasis> apps and the
-                                dashboard.</para>
-                        </entry>
-                        <entry>
-                            <para>Don't need access to enter data, modify data elements or data
-                                sets.</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>National health information system division officers (HISO)</para>
-                            <para>District health records and information officers (DHRIO)</para>
-                            <para>Facility health records and information officers (HRIO)</para>
-                        </entry>
-                        <entry>
-                            <para>Enter data that comes from facilities which are not able to do so
-                                directly</para>
-                            <para>Monitor, evaluate and analyse data</para>
-                        </entry>
-                        <entry>
-                            <para>Access to all the analysis and validation apps</para>
-                            <para>Access to <?oxy_comment_start author="cecilia" timestamp="20161109T141112+0100" comment="And teh tracker Capture and Event Capture?"?>the<?oxy_comment_end?>
-                                <emphasis role="bold">Data Entry</emphasis> app.</para>
-                        </entry>
-                        <entry>
-                            <para>-</para>
-                        </entry>
-                    </row>
-                    <row>
-                        <entry>
-                            <para>Data entry clerks</para>
-                        </entry>
-                        <entry>
-                            <para>-</para>
-                        </entry>
-                        <entry>
-                            <para>-</para>
-                        </entry>
-                        <entry>
-                            <para>-</para>
-                        </entry>
-                    </row>
-                </tbody>
-            </tgroup>
-        </informaltable>
     </section>
 </section>

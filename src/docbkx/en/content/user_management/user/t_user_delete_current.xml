@@ -14,5 +14,15 @@
         <?oxy_comment_start author="cecilia" timestamp="20161108T140237+0100" comment="Logged in user?
 What is the point of this function?"?>current<?oxy_comment_end?>
         user</title>
-    <para/>
+    <para>You can delete the user that is currently logged into the system.</para>
+    <orderedlist>
+        <listitem>
+            <para>Open the <emphasis role="bold">Users</emphasis> app and click <emphasis
+                    role="bold">Delete current user</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>Enter your password and <?oxy_comment_start author="cecilia" timestamp="20161111T150851+0100" comment="Verify if there&apos;s a &quot;confirm&quot; dialog box"?>click<?oxy_comment_end?>
+                <emphasis role="bold">Delete</emphasis>.</para>
+        </listitem>
+    </orderedlist>
 </section>

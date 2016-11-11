@@ -10,9 +10,19 @@
     xmlns:svg="http://www.w3.org/2000/svg"
     xmlns:mth="http://www.w3.org/1998/Math/MathML"
     xmlns:db="http://docbook.org/ns/docbook"    >
-    <title>Display users by organisation unit</title>
-    <para>The <emphasis role="italic">User by organisation unit</emphasis> function allows you see
-        which users have been assigned to a particular organisation unit. Simply select the
-        organisation unit from the tree on the left, and a list of users which have been assigned to
-        this particular organisation unit will be displayed</para>
+    <title>View users by organisation unit</title>
+    <para>You can view all users that have been assigned to a particular organisation unit.</para>
+    <orderedlist>
+        <listitem>
+            <para>Open the <emphasis role="bold">Users</emphasis> app and click <emphasis
+                    role="bold">User by organisation unit</emphasis>.</para>
+        </listitem>
+        <listitem>
+            <para>In the left-hand organisation unit tree, click an organisation unit.</para>
+            <?oxy_comment_start author="cecilia" timestamp="20161111T145341+0100" comment="Reword para."?>
+            <para>A list of users which have been assigned to this organisation unit is
+                displayed.</para>
+            <?oxy_comment_end?>
+        </listitem>
+    </orderedlist>
 </section>
