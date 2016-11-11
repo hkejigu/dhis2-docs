@@ -12,7 +12,7 @@
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="user_mgt_example">
     <title>Example: user
-        <?oxy_comment_start author="cecilia" timestamp="20161110T105041+0100" comment="Complete example"?>management<?oxy_comment_end?></title>
+        <?oxy_comment_start author="cecilia" timestamp="20161110T105041+0100" comment="Complete example and examples of user groups."?>management<?oxy_comment_end?></title>
     <para>In a health system, the users are logically grouped with respect to the task they perform
         and the position they occupy. Examples of common positions are:</para>
     <informaltable frame="all">
