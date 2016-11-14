@@ -9,7 +9,7 @@
     <title>About user
         <?oxy_comment_start author="cecilia" timestamp="20161110T105014+0100" comment="Permissions or authorities?"?>management<?oxy_comment_end?></title>
     <para>Multiple users can access DHIS2 simultaneously and each user can have different
-        permissions. You can fine-tune these permissions so that certain users only can enter data,
+        authorities. You can fine-tune these authorities so that certain users only can enter data,
         while others only can generate reports.</para>
     <itemizedlist>
         <listitem>
@@ -19,15 +19,15 @@
                 create as many users, user roles and user groups as you need.</para>
         </listitem>
         <listitem>
-            <para>You can assign specific permissions to each
+            <para>You can assign specific authorities to each
                 <?oxy_comment_start author="cecilia" timestamp="20161107T150628+0100" comment="Directly on the user or via a user role?"?>user<?oxy_comment_end?>.</para>
         </listitem>
         <listitem>
-            <para>You can create multiple user roles each with their own permissions.</para>
+            <para>You can create multiple user roles each with their own authorities.</para>
         </listitem>
         <listitem>
             <para>You can assign user roles to users to grant the users the corresponding
-                permissions.</para>
+                authorities.</para>
         </listitem>
         <listitem>
             <para>You can assign each user to
@@ -58,9 +58,7 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
             <tbody>
                 <row>
                     <entry>
-                        <para>Authority
-                            <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>(or
-                            Permission?)<?oxy_custom_end?></para>
+                        <para>Authority</para>
                     </entry>
                     <entry>
                         <para>A permission to perform one or several specific tasks</para>
@@ -75,8 +73,14 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                     <entry>
                         <para>User</para>
                     </entry>
-                    <entry/>
-                    <entry/>
+                    <entry>
+                        <para>A person's DHIS2 user account</para>
+                    </entry>
+                    <entry>
+                        <para>admin</para>
+                        <para>traore</para>
+                        <para>guest</para>
+                    </entry>
                 </row>
                 <row>
                     <entry>
@@ -85,24 +89,21 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                     <entry>
                         <para>A group of authorities</para>
                     </entry>
-                    <entry/>
+                    <entry>
+                        <para>Data entry clerk</para>
+                        <para>System administrator</para>
+                        <para>Antenatal care program access</para>
+                    </entry>
                 </row>
                 <row>
                     <entry>
                         <para>User group</para>
                     </entry>
-                    <entry/>
-                    <entry/>
-                </row>
-                <row>
-                    <entry/>
-                    <entry/>
-                    <entry/>
-                </row>
-                <row>
-                    <entry/>
-                    <entry/>
-                    <entry/>
+                    <entry>
+                        <para>A group of users</para>
+                    </entry>
+                    <entry><para>Kenya staff</para><para>Feedback message recipients</para>HIV
+                        program coordinators</entry>
                 </row>
             </tbody>
         </tgroup>
@@ -156,38 +157,39 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
     </table>
     <section>
         <title>About users</title>
-        <para>Each user in DHIS2 has a user account which is identified by a user name. A user
-            account allows the user to authenticate to system services and be granted authorization
-            to access them. To log in the user must enter a valid combination of user name and
-            password. If that combination matches a user name and password registered in the
-            database, the user is allowed to enter.</para>
-        <para>When you create a user, you should register the following information for each
-            user:</para>
+        <para>Each user in DHIS2 must have a user account which is identified by a user name. You
+            should register the following information for each user:</para>
         <itemizedlist>
             <listitem>
-                <para>a first name</para>
+                <para>first name</para>
             </listitem>
             <listitem>
-                <para>a surname</para>
+                <para>last name</para>
             </listitem>
             <listitem>
-                <para>an email address</para>
+                <para>email address</para>
             </listitem>
             <listitem>
-                <para>a phone number</para>
+                <para>phone number</para>
             </listitem>
         </itemizedlist>
-        <para>The contact information is important to get correct when creating new users since
-            certain functions in DHIS2 rely on sending emails to notify users about important
-            events. It is also useful to be able to communicate to users directly over email and
-            telephone to discuss data management issues or to sort out potential problems with the
-            system.</para>
-        <para>A user in DHIS2 is associated with an organisation unit. This implies that when
-            creating a new user account that account should be associated to the location where user
-            works. For instance when creating a user account for a district record officer that user
-            account should be linked with the particular district where she works. The link between
-            user account and organisation unit has several implications for the operation of the
-            system:</para>
+        <para>It is important that you register the correct contact information. DHIS2 uses this
+            information to contact users directly, for example sending emails to notify users about
+            important events.
+            <?oxy_comment_start author="cecilia" timestamp="20161114T095459+0100" comment="Verify"?>You
+            can also use the contact information to share for example dashboards and pivot
+            tables<?oxy_comment_end?>.</para>
+        <para>A user in DHIS2 is
+            <?oxy_comment_start author="cecilia" timestamp="20161114T095540+0100" comment="Is it mandatory to register an org unit to a user?
+
+Review the term&quot;associated&quot;, might be better with &quot;assigned&quot;"?>associated<?oxy_comment_end?>
+            with an organisation unit. You should assign the organisation unit where the user
+            works.</para>
+        <example>
+            <para>When you create a user account for a district record officer, you should assign
+                the district where he/she works as the organisation unit.</para>
+        </example>
+        <para>The assigned organisation unit affect how the user can use DHIS2:</para>
         <itemizedlist>
             <listitem>
                 <para>In the
@@ -214,45 +216,50 @@ Event Reports and Reports?"?>e
                     reports.)<?oxy_comment_end?></para>
             </listitem>
         </itemizedlist>
+        <para>An important part of user management is to control which users are allowed to create
+            new users with which authorities. In DHIS2, you can control which users are allowed to
+            perform this task. The key principle is that a user can only grant authorities and
+            access to data sets that the user itself has access to. The number of users at national,
+            province and district level are often relatively few and can be created and managed by
+            the system administrators. If a large part of the facilities are entering data directly
+            into the system, the number of users might become unwieldy. It is recommended to
+            delegate and decentralize this task to the district officers, it  will make the process
+            more efficient and support the facility users better.</para>
     </section>
     <section>
         <title>About user roles</title>
-        <para>A user role in the DHIS2 context is a group of authorities. </para>
-        <para>An authority in this regard means the permission to perform one or more specific
-            tasks. For instance, a user role may contain authorities to create a new data element,
-            update an organisation unit or view a report. Such a group of authorities constitutes a
-            user role.</para>
-        <para>When creating user roles such positions within the health system should be kept in
-            mind and it is often sensible to create a user role dedicated for each of those
-            positions. The process of creating user roles should be aligned with the process of
-            deciding which users are doing what tasks in the system.</para>
-        <para>First it should be defined which users should fulfill the role as system
-            administrators. This will often a part of the members of the national HIS division and
-            should have full authority in the system. Second a user role should be created roughly
-            for each position. A sensible consideration of what authorities should be given each
-            role must be done. An important rule is that each role should only be given the
-            authorities which are needed to perform the job well - not more. When operating a large,
-            centralized information system there is a need to coordinate the work between the people
-            involved. This is made easier if only those who are supposed to perform a task have the
-            authorities to perform it.</para>
-        <para>In addition, a user role is associated with a collection of data sets. This affects
-            the data entry module in that the user is only allowed to enter data for the data sets
-            registered for her user role. This is often useful in situations where one wants to
-            allow officers from health programs to enter data for their relevant data entry forms
-            only.</para>
-        <para>A user can be granted one or any number of user roles. In the case of many user roles,
-            the user is privileged with the sum of all authorities and data sets included in the
-            user roles. This means that user roles can be mixed and matched for special purposes
-            instead of merely creating new ones.</para>
-        <para>An important part of user management is to control which users are allowed to create
-            new users with which authorities. In DHIS2 one can control which users are allowed to
-            perform this task. In this process the key principle is that a user can only grant
-            authorities and access to data sets that the user itself has. The users at national,
-            province and district level are often relatively few and can be created and managed by
-            the system administrators. If a large part of the facilities are entering data directly
-            into the system the number of users might become unwieldy. Experience suggests that
-            delegating and decentralizing this task to the district officers will make the process
-            more efficient and support the facility users better.</para>
+        <para>A user role in DHIS2 is a group of authorities. An authority means the permission to
+            perform one or more specific tasks.</para>
+        <example>
+            <para>A user role can contain authorities to create a new data element, update an
+                organisation unit or view a report.</para>
+        </example>
+        <para>A user can have multiple user roles. If so, the user's authorities will be the sum of
+            all authorities and data sets in the user roles. This means that you can mix and match
+            user roles for special purposes instead of only creating new ones.</para>
+        <para>An user role is
+            <?oxy_comment_start author="cecilia" timestamp="20161114T102710+0100" comment="Review term."?>associated<?oxy_comment_end?>
+            with a collection of data sets. This affects the
+            <?oxy_comment_start author="cecilia" timestamp="20161114T102052+0100" comment="Which apps?"?>data
+            entry module<?oxy_comment_end?>: an user can only enter data for the data sets
+            registered for his/her user role. This can be useful when for example you want to allow
+            officers from health programs to enter data only for their relevant data entry
+            forms.</para>
+        <para>Recommendations:</para>
+        <itemizedlist>
+            <listitem>
+                <para>Create one user role for each position within the organisation.</para>
+            </listitem>
+            <listitem>
+                <para>Create the user roles in parallel with defining which user is doing which
+                    tasks in the system.</para>
+            </listitem>
+            <listitem>
+                <para>Only give the user roles the exact authorities they need to perform their job,
+                    not more. Only those who are supposed to perform a task should have the
+                    authorities to perform it.</para>
+            </listitem>
+        </itemizedlist>
     </section>
     <section>
         <title>About user

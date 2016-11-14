@@ -12,9 +12,21 @@
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="user_mgt_example">
     <title>Example: user
-        <?oxy_comment_start author="cecilia" timestamp="20161110T105041+0100" comment="Complete example and examples of user groups."?>management<?oxy_comment_end?></title>
-    <para>In a health system, the users are logically grouped with respect to the task they perform
-        and the position they occupy. Examples of common positions are:</para>
+        <?oxy_comment_start author="cecilia" timestamp="20161110T105041+0100" comment="Complete example and examples of user groups."?>management<?oxy_comment_end?>
+        in a health system</title>
+    <para>In a health system, users are logically grouped with respect to the task they perform and
+        the position they occupy.</para>
+    <orderedlist>
+        <listitem>
+            <para>Define which users that should have the role as system administrators. They are
+                often part of the members of the national HIS division and should have full
+                authority in the system.</para>
+        </listitem>
+        <listitem>
+            <para>Create roughly one user role for each position. </para>
+        </listitem>
+    </orderedlist>
+    <para>Examples of common positions are:</para>
     <informaltable frame="all">
         <tgroup cols="4">
             <colspec colname="c1" colnum="1" colwidth="1.0*"/>

@@ -11,25 +11,35 @@
     xmlns:mth="http://www.w3.org/1998/Math/MathML"
     xmlns:db="http://docbook.org/ns/docbook"
     xml:id="user_mgt_workflow">
-    <title>Workflow</title>
+    <title><?oxy_comment_start author="cecilia" timestamp="20161114T105833+0100" comment="Confirm workflow with SME."?>Workflow<?oxy_comment_end?></title>
     <orderedlist>
         <listitem>
-            <para>Define ...</para>
+            <para>Define the positions you need for your project and identify which tasks the
+                different positions will perform.</para>
         </listitem>
         <listitem>
-            <para>Create a user role.</para>
+            <para>Create roughly one user role for each position.</para>
         </listitem>
         <listitem>
-            <para>Create a user.</para>
+            <para>Create users.</para>
         </listitem>
         <listitem>
-            <para>Assign user roles to a user.</para>
+            <para>Assign user roles to the users.</para>
         </listitem>
         <listitem>
-            <para>Assign a user to organisation units.(?)</para>
+            <para>Assign the users to organisation units.(?)</para>
+        </listitem>
+        <listitem>
+            <para>Assign data sets to the user role(??)</para>
+        </listitem>
+        <listitem>
+            <para>(Optional) Group users in user groups.</para>
         </listitem>
     </orderedlist>
-    <para>In order for particular users to be able to enter data, you must add them to both a data
-        set and an organisational unit
-        <?oxy_comment_start author="cecilia" timestamp="20161110T141614+0100" comment="Organisation unit or organisation unit level?"?>level<?oxy_comment_end?>.</para>
+    <tip>
+        <para>For users to be able to enter data, you must
+            <?oxy_comment_start author="cecilia" timestamp="20161114T111602+0100" comment="Or assign to?"?>add<?oxy_comment_end?>
+            them to both a data set and an organisational unit
+            <?oxy_comment_start author="cecilia" timestamp="20161110T141614+0100" comment="Organisation unit or organisation unit level?"?>level<?oxy_comment_end?>.</para>
+    </tip>
 </section>
