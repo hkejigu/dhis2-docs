@@ -5,9 +5,8 @@
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xl="http://www.w3.org/1999/xlink"
     xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xhtml="http://www.w3.org/1999/xhtml"
     xmlns:svg="http://www.w3.org/2000/svg" xmlns:mth="http://www.w3.org/1998/Math/MathML"
-    xmlns:db="http://docbook.org/ns/docbook" 
-    xml:id="android_config">
-    <title>Configure DHIS2 programs to work on Android apps</title>
+    xmlns:db="http://docbook.org/ns/docbook" xml:id="android_config">
+    <title>[Review ongoing]Configure DHIS2 programs to work on Android apps</title>
     <para>To use event programs and tracker programs on the Android Event Capture and Tracker
         Capture apps, you must configure the programs in your
         <?oxy_comment_start author="cecilia" timestamp="20161107T095657+0100" comment="DHIS2 web?
@@ -15,38 +14,31 @@ you DHIS2 web instance?"?>DHIS2<?oxy_comment_end?>
         web instance.</para>
     <orderedlist>
         <listitem>
-            <para>Create a user with the correct settings:</para>
+            <para>Create a user with the correct settings in DHIS2 web instance:</para>
             <orderedlist>
                 <listitem>
-                    <para>In DHIS2 web, create a user.</para>
+                    <para>Create a user.</para>
                 </listitem>
                 <listitem>
-                    <para>Assign a user role ...</para>
-                    <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
-                    <para>You need to: assign a user role that allow user to access programs</para>
-                    <?oxy_custom_end?>
+                    <para>Assign a user role that allow the user to access programs.</para>
                 </listitem>
                 <listitem>
                     <para>Assign programs to the user role.</para>
-                    <?oxy_custom_start type="oxy_content_highlight" color="235,192,230"?>
-                    <para>User role must have programs assigned to it.</para>
-                    <?oxy_custom_end?>
                 </listitem>
             </orderedlist>
         </listitem>
         <listitem>
-            <para>Configure the program: </para>
-            <para>Open the <emphasis role="bold">Program</emphasis> app and ...Assign program to
-                organisation units. Select the organisation unit(s) you </para>
+            <?oxy_comment_start author="cecilia" timestamp="20161114T113306+0100" comment="Reword."?>
+            <para>Open the <emphasis role="bold">Program</emphasis> app and assign programs to
+                organisation units. To work on an Andorid device you must have the same data capture
+                and maintenance organisation unit as the organisation unit the program is assigned
+                to.</para>
+            <?oxy_comment_end?>
             <note>
-                <para>To work on Andorid: same data capture and maintenance organisation unit as the
-                    organisation unit the program is assigned to.</para>
-            </note>
-            <note>
-                <para>Important to only select the actual data capture organisation unit, if you
-                    select top organisation unit, the <emphasis role="bold">Event Tracker</emphasis>
-                    and the <emphasis role="bold">Tracker Capture</emphasis> Android apps, download
-                    ALL data for the organisation unit.</para>
+                <para>It is important to only select the actual data capture organisation unit, if
+                    you select the top organisation unit, the <emphasis role="bold">Event
+                        Tracker</emphasis> and the <emphasis role="bold">Tracker Capture</emphasis>
+                    Android apps, download ALL data for the organisation unit.</para>
             </note>
         </listitem>
         <listitem>
@@ -61,18 +53,21 @@ you DHIS2 web instance?"?>DHIS2<?oxy_comment_end?>
         </listitem>
     </orderedlist>
     <note>
-        <title>Error messages</title>
+        <title>Error
+            <?oxy_comment_start author="cecilia" timestamp="20161114T114138+0100" comment="Verify with SME."?>messages<?oxy_comment_end?></title>
         <informaltable frame="all">
-            <tgroup cols="2">
+            <tgroup cols="3">
                 <colspec colname="c1" colnum="1" colwidth="1.0*"/>
-                <colspec colname="c2" colnum="2" colwidth="1.0*"/>
+                <colspec colname="newCol2" colnum="2" colwidth="1*"/>
+                <colspec colname="c2" colnum="3" colwidth="1.0*"/>
                 <thead>
                     <row>
                         <entry>
                             <para>Error message</para>
                         </entry>
+                        <entry>Screen shot</entry>
                         <entry>
-                            <para>Description</para>
+                            <para>Solution</para>
                         </entry>
                     </row>
                 </thead>
@@ -81,20 +76,40 @@ you DHIS2 web instance?"?>DHIS2<?oxy_comment_end?>
                         <entry>
                             <para>You don't have any organisation units</para>
                         </entry>
-                        <entry/>
+                        <entry>
+                            <para/>
+                        </entry>
+                        <entry>
+                            <para/>
+                        </entry>
                     </row>
                     <row>
                         <entry>
                             <para>You don't have any programs assigned to the organisation
                                 unit</para>
                         </entry>
-                        <entry/>
+                        <entry>
+                            <screenshot>
+                                <mediaobject>
+                                    <imageobject>
+                                        <imagedata width="80%" align="center"
+                                            fileref="resources/images/android/common/config_error_program.png"
+                                            format="PNG"/>
+                                    </imageobject>
+                                </mediaobject>
+                            </screenshot>
+                        </entry>
+                        <entry>
+                            <para>In the <emphasis role="bold">Program</emphasis> app, assign
+                                programs to the relevant organisation units.</para>
+                        </entry>
                     </row>
                 </tbody>
             </tgroup>
         </informaltable>
     </note>
     <para>See
-        <?oxy_comment_start author="cecilia" timestamp="20161102T135023+0100" comment="Add see also section"?>also<?oxy_comment_end?>:</para>
+        <?oxy_comment_start author="cecilia" timestamp="20161102T135023+0100" comment="Add URL to correct sections."?>also<?oxy_comment_end?>:</para>
     <para>Manage programs</para>
+    <para>Manage users, user roles and user groups</para>
 </chapter>
