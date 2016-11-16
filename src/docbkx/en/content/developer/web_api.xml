@@ -3156,8 +3156,8 @@ http://server/api/26/constants/ID</screen></para>
           <colspec colnum="2" colname="c2" colwidth="2.69*"/>
           <thead>
             <row>
-              <entry> Parameter </entry>
-              <entry> Description </entry>
+              <entry>Parameter</entry>
+              <entry>Description</entry>
             </row>
           </thead>
           <tbody>
