@@ -101,7 +101,8 @@ You don&apos;t have to do it?"?>organisation<?oxy_comment_end?>
                         <para>User group</para>
                     </entry>
                     <entry>
-                        <para>A group of users</para>
+                        <para>A group of
+                            <?oxy_comment_start author="cecilia" timestamp="20161115T152054+0100" comment="A group of user accounts?"?>users<?oxy_comment_end?></para>
                     </entry>
                     <entry><para>Kenya staff</para><para>Feedback message recipients</para>HIV
                         program coordinators</entry>
