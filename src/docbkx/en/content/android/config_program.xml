@@ -7,8 +7,9 @@
     xmlns:svg="http://www.w3.org/2000/svg" xmlns:mth="http://www.w3.org/1998/Math/MathML"
     xmlns:db="http://docbook.org/ns/docbook" xml:id="android_config">
     <title>[Review ongoing]Configure DHIS2 programs to work on Android apps</title>
-    <para>To use event programs and tracker programs on the Android Event Capture and Tracker
-        Capture apps, you must configure the programs in your
+    <para>To use event programs and tracker programs on the Android <emphasis role="bold">Event
+            Capture</emphasis> and <emphasis role="bold">Tracker Capture</emphasis> apps, you must
+        configure the programs in your
         <?oxy_comment_start author="cecilia" timestamp="20161107T095657+0100" comment="DHIS2 web?
 you DHIS2 web instance?"?>DHIS2<?oxy_comment_end?>
         web instance.</para>
@@ -30,15 +31,15 @@ you DHIS2 web instance?"?>DHIS2<?oxy_comment_end?>
         <listitem>
             <?oxy_comment_start author="cecilia" timestamp="20161114T113306+0100" comment="Reword."?>
             <para>Open the <emphasis role="bold">Program</emphasis> app and assign programs to
-                organisation units. To work on an Andorid device you must have the same data capture
+                organisation units. To work on an Android device you must have the same data capture
                 and maintenance organisation unit as the organisation unit the program is assigned
                 to.</para>
             <?oxy_comment_end?>
             <note>
                 <para>It is important to only select the actual data capture organisation unit, if
-                    you select the top organisation unit, the <emphasis role="bold">Event
-                        Tracker</emphasis> and the <emphasis role="bold">Tracker Capture</emphasis>
-                    Android apps, download ALL data for the organisation unit.</para>
+                    you select the top organisation unit, the Android <emphasis role="bold">Event
+                        Capture</emphasis> and the <emphasis role="bold">Tracker Capture</emphasis>
+                    apps, download ALL data for the organisation unit.</para>
             </note>
         </listitem>
         <listitem>
